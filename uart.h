@@ -32,7 +32,7 @@ typedef struct { uint8_t (*Read)(void); void (*Write)(uint8_t txdata); bool (*Tr
 extern const uart_functions_t uart[];
 
 char ResponseBuffer [responseBufferSize] = {0};
-char ReadStorage [responseBufferSize] = {0};
+//char ReadStorage [responseBufferSize] = {0};
 void blockingWait(uint16_t);
 void ReadyReceiveBuffer(void);
 char* GetResponse(void);

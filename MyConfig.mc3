@@ -21,12 +21,12 @@
          <string>class com.microchip.mcc.mcu8.modules.extint.EXTINT</string>
       </entry>
       <entry>
-         <string>WDT</string>
-         <string>class com.microchip.mcc.mcu8.systemManager.wdt.WDT</string>
-      </entry>
-      <entry>
          <string>mTouch</string>
          <string>class com.microchip.mcc.modules.mcu8.mTouchLibrary.MTouch</string>
+      </entry>
+      <entry>
+         <string>WDT</string>
+         <string>class com.microchip.mcc.mcu8.systemManager.wdt.WDT</string>
       </entry>
       <entry>
          <string>Pin Module</string>
@@ -112,7 +112,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR0" name="prescaleDivisor"/>
-         <value>256</value>
+         <value>4</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="mTouch" name="buttons%items%2%reading_gain"/>
@@ -492,7 +492,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR0" name="CallbackFuncRate"/>
-         <value>0.000512</value>
+         <value>0.000076</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCAN" settingAlias="IOCAN2" alias="disabled"/>
@@ -592,7 +592,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR0" name="actualPeriod"/>
-         <value>0.000512</value>
+         <value>0.000076</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="IOCAF" settingAlias="IOCAF2"/>
@@ -824,7 +824,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR0" name="prescaledFreq"/>
-         <value>31250</value>
+         <value>2000000</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="LATB" settingAlias="LATB7" alias="set"/>
@@ -968,7 +968,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="TMR0" registerAlias="TMR"/>
-         <value>240</value>
+         <value>104</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="IOCAP" settingAlias="IOCAP1"/>
@@ -1163,12 +1163,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR2" registerAlias="TCON" settingAlias="TOUTPS" alias="1:1"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="EUSART" name="baudprocessmode"/>
          <value>easysetup</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR2" registerAlias="TCON" settingAlias="TOUTPS" alias="1:1"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="WPUA" settingAlias="WPUA0"/>
@@ -1204,7 +1204,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR0" name="minPeriod"/>
-         <value>0.000032</value>
+         <value>0.0000005</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="mTouch" name="sensorAutoCalibrationEnable"/>
@@ -1240,7 +1240,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR0" name="maxPeriod"/>
-         <value>0.008192</value>
+         <value>0.000128</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="CONFIG1" settingAlias="BOREN" alias="OFF"/>
@@ -1312,7 +1312,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR0" name="requestedPeriod"/>
-         <value>0.0005</value>
+         <value>0.000076</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="CONFIG2" settingAlias="STVREN" alias="ON"/>
@@ -1388,7 +1388,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="TMR0" registerAlias="OPTION_REG"/>
-         <value>215</value>
+         <value>209</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="mTouch" name="buttons%items%0%surface_group"/>
@@ -1763,12 +1763,12 @@
          <value>falling_edge</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="CONFIG1" settingAlias="CP" alias="OFF"/>
-         <value>128</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Interrupt Module" name="IVT_NAME"/>
          <value>IVT1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="CONFIG1" settingAlias="CP" alias="OFF"/>
+         <value>128</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="mTouch" name="buttons%items%2%slider_group"/>
@@ -1795,12 +1795,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR0" registerAlias="TMRI" settingAlias="enable"/>
-         <value>enabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="EUSART" registerAlias="BAUDCON" settingAlias="SCKP" alias="Inverted"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR0" registerAlias="TMRI" settingAlias="enable"/>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR2" registerAlias="TMRI" settingAlias="enable"/>
@@ -1816,7 +1816,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR0" registerAlias="OPTION_REG" settingAlias="PS"/>
-         <value>1:256</value>
+         <value>1:4</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="INTERNAL OSCILLATOR" registerAlias="OSCCON" settingAlias="IRCF" alias="125KHz_HF"/>
@@ -1843,12 +1843,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR2" registerAlias="TCON" settingAlias="TCKPS" alias="1:4"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="EUSART" name="CK"/>
          <value>enabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR2" registerAlias="TCON" settingAlias="TCKPS" alias="1:4"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="mTouch" name="sensors%items%2%oversamplingEnable"/>
@@ -2076,7 +2076,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR0" registerAlias="TMR" settingAlias="TMR"/>
-         <value>240</value>
+         <value>104</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="mTouch" name="lowPowerMeasurementSensor%sensorIndividualLowPowerMeasurementEnable"/>
@@ -3247,12 +3247,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR0" registerAlias="OPTION_REG" settingAlias="PS" alias="1:32"/>
-         <value>4</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="EUSART" registerAlias="SPBRGL"/>
          <value>68</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR0" registerAlias="OPTION_REG" settingAlias="PS" alias="1:32"/>
+         <value>4</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="WPUA" settingAlias="WPUA4" alias="set"/>
@@ -3575,12 +3575,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR2" registerAlias="TMRI" settingAlias="flag"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="EUSART" registerAlias="RCSTA" settingAlias="ADDEN" alias="enabled"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR2" registerAlias="TMRI" settingAlias="flag"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RA4"/>
@@ -3884,7 +3884,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="mTouch" name="sensors%selectedScanRateTimer"/>
-         <value></value>
+         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="trisUserSetRA0"/>
@@ -3937,12 +3937,12 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
-         <file>mcc_generated_files\ext_int.c</file>
-         <hash>962d768ece010e648ed77d4d5340fdd17df7d9d1d04488247e8984fbb1878f53</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\interrupt_manager.h</file>
          <hash>f20979d24769041f8bd1e4529549bbd5be30bf92e789cb5a2ae8d415596a8856</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\ext_int.c</file>
+         <hash>962d768ece010e648ed77d4d5340fdd17df7d9d1d04488247e8984fbb1878f53</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mtouch\mtouch_api_example.c</file>
@@ -3993,12 +3993,12 @@
          <hash>cca70feba4a524a185d752a089cb7e49cdc615de330c503b6477c236390d0a2f</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\device_config.c</file>
-         <hash>c150e328a24b87140ff21b7b2d57afa610e0e47908c7a9e584c3e3c6d967caa6</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\tmr2.h</file>
          <hash>455f77d65ed248d19fade080a7ef8c49f2a7db14fcf1b888e914aea1aec3370a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\device_config.c</file>
+         <hash>c150e328a24b87140ff21b7b2d57afa610e0e47908c7a9e584c3e3c6d967caa6</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\tmr2.c</file>
@@ -4014,7 +4014,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\tmr0.c</file>
-         <hash>9d60c406f6ed0a8ec0a097cc2ac8d6f1e315ee65a587cc9ce5aefbdb261e6371</hash>
+         <hash>319b6a2f339e54d9220ce7cbf060a4c4a76fd52e263332092e6aa30241f5ba1b</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>
@@ -4025,12 +4025,12 @@
          <hash>fdd1badf17602083ada76c76d8d6b374b7bd02be862b9976809c5d0e6652cf6c</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\ext_int.h</file>
-         <hash>bc3971f7f9f8ccfa4bd3da0e37fc7513a7995e8a27d471ac9ec24361b59bd13d</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\interrupt_manager.c</file>
          <hash>f16101615c5220fcd92a4739c1e699ce40150f1132acdd23f14c8d065b243d20</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\ext_int.h</file>
+         <hash>bc3971f7f9f8ccfa4bd3da0e37fc7513a7995e8a27d471ac9ec24361b59bd13d</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mtouch\mtouch.h</file>

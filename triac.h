@@ -6,8 +6,8 @@ union
     unsigned int full;
     struct
     {
-        unsigned level          :4;
-        unsigned last_level     :4;
+        unsigned level          :8;
+        unsigned last_level     :8;
     };
 }triac_level;
 union
@@ -15,8 +15,8 @@ union
     unsigned int full;
     struct
     {
-        unsigned level          :4;
-        unsigned last_level     :4;
+        unsigned level          :8;
+        unsigned last_level     :8;
     };
 }triac_level_now;
 union
@@ -24,8 +24,8 @@ union
     unsigned int full;
     struct
     {
-        unsigned level          :4;
-        unsigned last_level     :4;
+        unsigned level          :8;
+        unsigned last_level     :8;
     };
 }rc_level;
 union

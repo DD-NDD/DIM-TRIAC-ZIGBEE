@@ -67,14 +67,14 @@ void TMR0_Initialize(void)
 {
     // Set TMR0 to the options selected in the User Interface
 	
-    // PSA assigned; PS 1:256; TMRSE Increment_hi_lo; mask the nWPUEN and INTEDG bits
-    OPTION_REG = (uint8_t)((OPTION_REG & 0xC0) | (0xD7 & 0x3F)); 
+    // PSA assigned; PS 1:4; TMRSE Increment_hi_lo; mask the nWPUEN and INTEDG bits
+    OPTION_REG = (uint8_t)((OPTION_REG & 0xC0) | (0xD1 & 0x3F)); 
 	
-    // TMR0 240; 
-    TMR0 = 0xF0;
+    // TMR0 104; 
+    TMR0 = 0x68;
 	
     // Load the TMR value to reload variable
-    timer0ReloadVal= 240;
+    timer0ReloadVal= 104;
 
     // Clear Interrupt flag before enabling the interrupt
     INTCONbits.TMR0IF = 0;
@@ -129,17 +129,17 @@ void TMR0_ISR(void)
             TMR0_InterruptHandler();
         }
     }
-    else if(++tick_count == 15 - triac_level_now.level)
+    else if(++tick_count == 100 - triac_level_now.level)
     {
         tick_count = 0;
         TMR0_CallBack();
     }
+
     // add your TMR0 interrupt custom code
 }
 
 void TMR0_CallBack(void)
 {
-    // Add your custom callback code here
     INTCONbits.TMR0IE = 0; // disable interrupt
     TRIAC_SetHigh();
     __delay_us(100);
